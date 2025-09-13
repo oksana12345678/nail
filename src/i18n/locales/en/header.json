@@ -1,0 +1,10 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About us",
+    "pages": "Pages",
+    "portfolio": "Portfolio",
+    "contact_us": "Contact us"
+  },
+  "book_now": "Book now"
+}
