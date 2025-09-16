@@ -11,10 +11,13 @@ const navItems = ['home', 'about', 'pages', 'portfolio', 'contact_us'] as const;
 const Header: React.FC<Translation> = ({ t }) => {
   return (
     <nav className="w-full sm:max-w-[270px] md:max-w-[470px] lg:max-w-[1140px] mx-auto flex items-center justify-between py-8 px-4 sm:px-0">
-      <Icon
-        iconName="logo"
-        className="w-12 h-12 fill-[#F6E6D6]  stroke-[#1D1D1E]"
-      />
+      <div className="flex flex-col items-center  ">
+        <Icon
+          iconName="logo"
+          className="w-12 h-12 fill-[#F6E6D6]  stroke-[#1D1D1E]"
+        />
+        <span>Nail Studio</span>
+      </div>
       <ul className="flex gap-4 sm:hidden lg:flex">
         {navItems.map((key) => (
           <li key={key}>

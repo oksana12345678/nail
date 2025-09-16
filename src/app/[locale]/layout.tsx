@@ -8,6 +8,7 @@ import { Language } from '@/shared/types';
 import { checkSupportedLocales } from '@/shared/utils/checkSupportedLocales';
 import Header from '@/modules/Header/Header';
 import initTranslations from '@/i18n/utils/i18n';
+import DiscountBanner from '@/modules/DiscountBanner/DiscountBanner';
 
 const nunitoSans = Nunito({
   variable: '--font-nunito-sans',
@@ -62,6 +63,8 @@ export default async function RootLayout(props: LayoutProps) {
       <body
         className={`${nunitoSans.variable} ${playfairDisplay.variable} antialiased`}
       >
+        <DiscountBanner />
+
         <Header t={t} />
         {children}
       </body>

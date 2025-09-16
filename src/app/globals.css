@@ -4,13 +4,13 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #f8efe8;
+  --foreground: #1d1d1e;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #fcf8ef;
-    --foreground: #ededed;
+    --foreground: #1d1d1e;
   }
 }
 
@@ -23,4 +23,14 @@ body {
   .base-font-normal {
     @apply text-base font-normal cursor-pointer;
   }
+}
+
+.swiper-pagination-bullet {
+  background-color: #f3eae3 !important;
+  opacity: 0.7;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #ffffff !important;
+  opacity: 1;
 }

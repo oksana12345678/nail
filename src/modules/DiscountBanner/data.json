@@ -1,0 +1,5 @@
+[
+  { "name": "depilation", "off": 20 },
+  { "name": "nails", "off": 15 },
+  { "name": "permanent", "off": 10 }
+]

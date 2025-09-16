@@ -1,0 +1,19 @@
+{
+  "main_text": "Make Your Nails Look Gorgeous!",
+  "button": "About us",
+
+  "services_list": [
+    {
+      "name": "Manicure",
+      "coast": "Gel polish, and nail art to make your nails look stunning."
+    },
+    {
+      "name": "Pedicure",
+      "coast": "Comfortable massage chairs, free Wi-Fi, and a variety of refreshments to make your visit as enjoyable as possible."
+    },
+    {
+      "name": "Nail Art",
+      "coast": "Experienced nail technicians who are passionate about their craft and dedicated to providing the best possible service."
+    }
+  ]
+}

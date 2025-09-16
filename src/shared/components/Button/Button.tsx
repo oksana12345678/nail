@@ -21,7 +21,7 @@ const Button = ({
   ...props
 }: ButtonProps) => {
   const variantClasses = {
-    primary: 'bg-[#1D1D1E] text-white hover:bg-blue-700',
+    primary: 'bg-[#1D1D1E] text-white hover-main ',
     secondary: 'bg-gray-200 text-gray-800 hover:bg-gray-300',
     outline: 'border border-gray-400 text-gray-800 hover:bg-gray-100',
   };
@@ -42,7 +42,7 @@ const Button = ({
     <button
       type={type}
       className={clsx(
-        'rounded transition-colors duration-200 font-sans ',
+        'transition-custom font-sans ',
         variant && variantClasses[variant],
         size && sizeClasses[size],
         fontSize && fontSizeClasses[fontSize],
