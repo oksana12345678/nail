@@ -8,12 +8,13 @@ const tailwindConfig = {
       backgroundImage: {
         dots: "url('/icons/dots.svg')",
         circle: "url('/icons/circle.svg')",
+        hero: "url('/Mask.png')",
       },
       colors: {
         background: 'var(--background)',
         foreground: 'var(--foreground)',
-        main_bg: '#fcf8ef',
-        main_button: '#1D1D1E',
+        main_bg: '#1D1D1E',
+        main_button: '#fcf8ef',
         secondary_accent: '#F6E6D6',
         accent_discount: '#FBBBFF',
         skin_accent: '#D8B192',
@@ -41,6 +42,11 @@ const tailwindConfig = {
         {
           '.base-font-normal': {
             '@apply text-base font-normal': {},
+          },
+
+          '.base-button': {
+            '@apply border border-skin_accent text-white hover-main rounded-lg px-6 py-3.5':
+              {},
           },
 
           '.hover-main:hover': {

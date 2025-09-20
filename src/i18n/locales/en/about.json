@@ -1,0 +1,20 @@
+{
+  "care_list": {
+    "0": {
+      "name": "Nail Care",
+      "description": "Nail care is an essential part of maintaining the beauty and health of your hands. It includes regular trimming and filing, moisturizing the cuticles, and applying strengthening treatments."
+    },
+    "1": {
+      "name": "Nail Art",
+      "description": "Nail art is a creative way to decorate and personalize your nails. From simple designs to complex patterns, nail art allows you to express your individuality and style."
+    },
+    "2": {
+      "name": "Tips & Trends",
+      "description": "Stay updated with the latest nail tips and trends. Discover new techniques, fashionable colors, and seasonal designs that will keep your nails looking modern and stylish."
+    }
+  },
+  "title": "Our Story",
+  "description": "Our story is about passion, dedication, and care. We believe in beauty that comes from health and self-expression. With every step, we strive to provide the best experience for our clients.",
+  "description_two": "Always Clean – we value hygiene and the highest standards of cleanliness in everything we do.",
+  "description_three": "Always Leading and Ethical – we follow modern trends while staying true to ethical values and professionalism."
+}

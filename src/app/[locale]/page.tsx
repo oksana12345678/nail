@@ -1,12 +1,16 @@
+import initTranslations from '@/i18n/utils/i18n';
+import AboutUs from '@/modules/AboutUs/AboutUs';
 import Hero from '@/modules/Hero/Hero';
-import Container from '@/shared/components/Container/Container';
+import HotDates from '@/modules/HotDates/HotDates';
+import { NAMESPACES } from '@/shared/constants';
+import { useTranslation } from 'react-i18next';
 
 export default function Home() {
   return (
-    <main className="font-sans h-screen ">
-      <Container>
-        <Hero />
-      </Container>
+    <main className="font-sans h-screen flex flex-col justify-center items-center">
+      <Hero />
+      <HotDates />
+      <AboutUs />
     </main>
   );
 }

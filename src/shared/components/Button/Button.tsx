@@ -21,7 +21,7 @@ const Button = ({
   ...props
 }: ButtonProps) => {
   const variantClasses = {
-    primary: 'bg-[#1D1D1E] text-white hover-main ',
+    primary: 'bg-[#1D1D1E] text-white hover-main rounded-lg',
     secondary: 'bg-gray-200 text-gray-800 hover:bg-gray-300',
     outline: 'border border-gray-400 text-gray-800 hover:bg-gray-100',
   };

@@ -4,3 +4,8 @@ import { LANGUAGES } from '../constants';
 export type Language = (typeof LANGUAGES)[keyof typeof LANGUAGES];
 
 export type Translation = { t: TFunction };
+
+export interface LayoutProps {
+  children?: React.ReactNode;
+  params: { locale: Language };
+}

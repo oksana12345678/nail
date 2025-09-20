@@ -1,3 +1,4 @@
+import clsx from 'clsx';
 import { ReactNode, HTMLAttributes } from 'react';
 
 interface ContainerProps extends HTMLAttributes<HTMLDivElement> {
@@ -5,9 +6,12 @@ interface ContainerProps extends HTMLAttributes<HTMLDivElement> {
   className?: string;
 }
 
-const Container = ({ children, ...props }: ContainerProps) => {
+const Container = ({ children, className, ...props }: ContainerProps) => {
   return (
-    <div className="px-4 mx-auto max-w-screen-xl" {...props}>
+    <div
+      className={clsx('px-4 mx-auto max-w-screen-xl py-10', className)}
+      {...props}
+    >
       {children}
     </div>
   );

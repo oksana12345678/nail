@@ -3,14 +3,14 @@
 @import 'tailwindcss/utilities';
 
 :root {
-  --background: #ffffff;
+  --background: #1d1d1e;
   --foreground: #1d1d1e;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #fcf8ef;
-    --foreground: #1d1d1e;
+    --background: #1d1d1e;
+    --foreground: #fcf8ef;
   }
 }
 
@@ -22,6 +22,10 @@ body {
 @layer components {
   .base-font-normal {
     @apply text-base font-normal cursor-pointer;
+  }
+
+  .base-button {
+    @apply border border-skin_accent text-white hover-main rounded-lg px-6 py-3.5;
   }
 }
 

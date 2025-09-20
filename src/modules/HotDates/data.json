@@ -1,0 +1,23 @@
+{
+  "data": [
+    {
+      "name": "Julia K",
+      "date": "2024-10-05",
+      "time": "7:00",
+      "description": "Manicure"
+    },
+    {
+      "name": "Bella S",
+      "date": "2024-10-12",
+      "time": "7:30",
+      "description": "Manicure"
+    },
+    {
+      "name": "Cathy L",
+      "date": "2024-10-20",
+      "time": "7:50",
+      "description": "Pedicure"
+    }
+  ],
+  "button": "Book now"
+}

@@ -1,0 +1,20 @@
+{
+  "care_list": {
+    "0": {
+      "name": "Pielęgnacja paznokci",
+      "description": "Pielęgnacja paznokci to ważny element dbania o wygląd i zdrowie dłoni. Obejmuje regularne skracanie i piłowanie paznokci, nawilżanie skórek oraz stosowanie odżywek wzmacniających."
+    },
+    "1": {
+      "name": "Nail Art",
+      "description": "Nail art to kreatywny sposób zdobienia i personalizacji paznokci. Od prostych wzorów po skomplikowane kompozycje – nail art pozwala wyrazić indywidualność i styl."
+    },
+    "2": {
+      "name": "Porady i trendy",
+      "description": "Bądź na bieżąco z najnowszymi poradami i trendami dotyczącymi paznokci. Odkrywaj nowe techniki, modne kolory i sezonowe wzory, aby Twoje paznokcie zawsze wyglądały stylowo i nowocześnie."
+    }
+  },
+  "title": "Nasza historia",
+  "description": "Nasza historia to opowieść o pasji, zaangażowaniu i trosce. Wierzymy w piękno, które pochodzi ze zdrowia i możliwości wyrażania siebie. Na każdym etapie staramy się zapewnić naszym klientom najlepsze doświadczenia.",
+  "description_two": "Zawsze czysto — cenimy higienę i najwyższe standardy czystości we wszystkim, co robimy.",
+  "description_three": "Zawsze na prowadzeniu i etyczni — podążamy za nowoczesnymi trendami, pozostając wierni wartościom etycznym i profesjonalizmowi."
+}

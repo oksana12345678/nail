@@ -9,6 +9,8 @@ import { checkSupportedLocales } from '@/shared/utils/checkSupportedLocales';
 import Header from '@/modules/Header/Header';
 import initTranslations from '@/i18n/utils/i18n';
 import DiscountBanner from '@/modules/DiscountBanner/DiscountBanner';
+import { LayoutProps } from '@/shared/types/index';
+import { TranslationsProvider } from '@/i18n/utils';
 
 const nunitoSans = Nunito({
   variable: '--font-nunito-sans',
@@ -27,11 +29,6 @@ const mainMetadataDict: Record<Language, { description: string }> = {
   ua: { description: '' },
   pl: { description: '' },
 };
-
-interface LayoutProps {
-  children: React.ReactNode;
-  params: { locale: Language };
-}
 
 export async function generateMetadata({
   params,
@@ -56,18 +53,24 @@ export default async function RootLayout(props: LayoutProps) {
   const { children, params } = props;
   const { locale } = params;
 
-  const { t } = await initTranslations(locale, i18nNamespaces);
+  const { t, resources } = await initTranslations(locale, i18nNamespaces);
 
   return (
     <html lang={locale}>
-      <body
-        className={`${nunitoSans.variable} ${playfairDisplay.variable} antialiased`}
+      <TranslationsProvider
+        namespaces={i18nNamespaces}
+        locale={locale}
+        resources={resources}
       >
-        <DiscountBanner />
+        <body
+          className={`${nunitoSans.variable} ${playfairDisplay.variable} antialiased`}
+        >
+          <DiscountBanner />
 
-        <Header t={t} />
-        {children}
-      </body>
+          <Header t={t} />
+          {children}
+        </body>
+      </TranslationsProvider>
     </html>
   );
 }
