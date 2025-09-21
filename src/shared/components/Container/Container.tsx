@@ -9,7 +9,10 @@ interface ContainerProps extends HTMLAttributes<HTMLDivElement> {
 const Container = ({ children, className, ...props }: ContainerProps) => {
   return (
     <div
-      className={clsx('px-4 mx-auto max-w-screen-xl py-10', className)}
+      className={clsx(
+        'px-4 sm:px-6 lg:px-8 mx-auto max-w-screen-xl ',
+        className
+      )}
       {...props}
     >
       {children}

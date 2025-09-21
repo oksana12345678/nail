@@ -9,6 +9,7 @@ const tailwindConfig = {
         dots: "url('/icons/dots.svg')",
         circle: "url('/icons/circle.svg')",
         hero: "url('/Mask.png')",
+        gold_ring: "url('/icons/gold_ring.svg')",
       },
       colors: {
         background: 'var(--background)',
@@ -45,7 +46,11 @@ const tailwindConfig = {
           },
 
           '.base-button': {
-            '@apply border border-skin_accent text-white hover-main rounded-lg px-6 py-3.5':
+            '@apply border-2 border-skin_accent text-white hover-main rounded-lg px-6 py-3.5':
+              {},
+          },
+          '.base-button_mb': {
+            '@apply border-2 border-skin_accent text-white hover-main rounded-lg px-3 py-3 flex items-center justify-center':
               {},
           },
 
@@ -57,12 +62,21 @@ const tailwindConfig = {
             textShadow: '2px 2px 10px #fff',
           },
 
+          '.list-hover:hover': {
+            boxShadow: '0px 0px 30px 6px #D8B192',
+            borderRadius: '14px',
+            textShadow: '2px 2px 10px #D8B192',
+          },
+
           '.transition-custom': {
             transitionProperty:
               'background-color, border-color, color, fill, stroke, box-shadow, transform, border-radius, text-shadow',
             transitionDelay: '100ms',
             transitionDuration: '500ms',
             transitionTimingFunction: 'ease-in-out',
+          },
+          '.burger-btn-el': {
+            '@apply bg-white w-7 h-[2px] rounded-md': {},
           },
         },
         {

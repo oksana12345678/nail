@@ -1,10 +1,10 @@
 {
   "nav": {
-    "home": "Strona główna",
-    "about": "O nas",
-    "pages": "Strony",
-    "portfolio": "Portfolio",
-    "contact_us": "Skontaktuj się z nami"
+    "home": { "title": "Strona główna", "link": "/home" },
+    "about": { "title": "O nas", "link": "#about" },
+    "pages": { "title": "Strony", "link": "/pages" },
+    "portfolio": { "title": "Portfolio", "link": "#portfolio" },
+    "contact_us": { "title": "Kontakt", "link": "#contact" }
   },
-  "book_now": "Zarezerwuj teraz"
+  "book_now": "Zarezerwuj"
 }

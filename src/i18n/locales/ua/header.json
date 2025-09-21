@@ -1,10 +1,10 @@
 {
   "nav": {
-    "home": "Головна",
-    "about": "Про нас",
-    "pages": "Cторінки",
-    "portfolio": "Портфоліо",
-    "contact_us": "Зв'язатися з нами"
+    "home": { "title": "Головна", "link": "/home" },
+    "about": { "title": "Про нас", "link": "#about" },
+    "pages": { "title": "Сторінки", "link": "/pages" },
+    "portfolio": { "title": "Портфоліо", "link": "#portfolio" },
+    "contact_us": { "title": "Зв'яжіться з нами", "link": "#contact" }
   },
-  "book_now": "Забронювати зараз"
+  "book_now": "Забронювати"
 }

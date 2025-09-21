@@ -9,12 +9,13 @@ interface NavButtonsProps extends Translation {
 }
 
 const NavButtons: React.FC<NavButtonsProps> = ({ t, itemKey, className }) => {
+  const title = t ? t(`nav.${itemKey}.title`) : '';
+  const link = t ? t(`nav.${itemKey}.link`) : '#';
+
   return (
-    <div>
-      <Link href="#" className={clsx('text-main_button', className)}>
-        {t(`nav.${itemKey}`)}
-      </Link>
-    </div>
+    <Link href={`${link}`} className={clsx('text-main_button', className)}>
+      {title}
+    </Link>
   );
 };
 

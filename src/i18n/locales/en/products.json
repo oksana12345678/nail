@@ -1,0 +1,29 @@
+{
+  "products": {
+    "0": {
+      "photo": "/about_second.png",
+      "title": "Foot Care",
+      "link": "/products/foot-care"
+    },
+    "1": {
+      "photo": "/about_second.png",
+      "title": "Hand Care",
+      "link": "/products/hand-care"
+    },
+    "2": {
+      "photo": "/about_second.png",
+      "title": "Nail Polish",
+      "link": "/products/nail-polish"
+    },
+    "3": {
+      "photo": "/about_second.png",
+      "title": "Nail Art",
+      "link": "/products/nail-art"
+    },
+    "4": {
+      "photo": "/about_second.png",
+      "title": "Nail Treatment",
+      "link": "/products/nail-treatment"
+    }
+  }
+}

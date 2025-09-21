@@ -5,6 +5,7 @@ export const NAMESPACES = [
   'hero',
   'footer',
   'main',
+  'products',
   'about',
   'portfolio',
   'contact',

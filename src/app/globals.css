@@ -27,6 +27,10 @@ body {
   .base-button {
     @apply border border-skin_accent text-white hover-main rounded-lg px-6 py-3.5;
   }
+
+  .burger-btn-el {
+    @apply bg-white w-7 h-[2px] rounded-md;
+  }
 }
 
 .swiper-pagination-bullet {
