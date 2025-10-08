@@ -1,6 +1,7 @@
 import { TFunction } from 'i18next';
 import { LANGUAGES } from '../constants';
 
+
 export type Language = (typeof LANGUAGES)[keyof typeof LANGUAGES];
 
 export type Translation = { t: TFunction };
@@ -21,5 +22,5 @@ export interface StateProps {
 }
 
 export interface LocaleParams {
-  locale: string ;
+  locale: React.ReactNode ;
 }
