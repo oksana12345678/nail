@@ -3,6 +3,7 @@ import { trendsAll } from '../../../public/trends';
 import Image from 'next/image';
 
 const GalleryList: React.FC = () => {
+  console.log(trendsAll);
   return (
     <>
       <ul className="flex flex-wrap gap-8">

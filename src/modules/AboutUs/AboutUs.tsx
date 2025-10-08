@@ -13,7 +13,6 @@ const AboutUs: React.FC = () => {
 
   const careListRaw = t('care_list', { returnObjects: true });
   const careList = careListRaw ? Object.values(careListRaw) : [];
-
   return (
     <Section>
       <Container className="flex flex-col items-center gap-20  " id="about">

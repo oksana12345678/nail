@@ -4,12 +4,11 @@ import '../globals.css';
 import i18nConfig from '../../../i18nConfig';
 import React from 'react';
 import { NAMESPACES } from '@/shared/constants';
-import { Language } from '@/shared/types';
 import { checkSupportedLocales } from '@/shared/utils/checkSupportedLocales';
 import Header from '@/modules/Header/Header';
 import initTranslations from '@/i18n/utils/i18n';
 import DiscountBanner from '@/modules/DiscountBanner/DiscountBanner';
-import { LayoutProps } from '@/shared/types/index';
+import { Language, LayoutProps } from '@/shared/types/index';
 import { TranslationsProvider } from '@/i18n/utils';
 
 const nunitoSans = Nunito({
@@ -24,25 +23,22 @@ const playfairDisplay = Playfair_Display({
 
 const i18nNamespaces = Array.from(NAMESPACES);
 
-const mainMetadataDict: Record<Language, { description: string }> = {
+const mainMetadataDict: Record<string, { description: string }> = {
   en: { description: '' },
   ua: { description: '' },
   pl: { description: '' },
 };
 
-
-interface LocaleLayoutProps {
-  children?: React.ReactNode;
-  params: { locale:()=>void;  }; //не Language!
-};
+type Params = Promise<{ locale: string }>;
 
 export async function generateMetadata({
   params,
-}:LocaleLayoutProps
-): Promise<Metadata> {
-  const { locale } = params;
+}: {
+  params: Params;
+}): Promise<Metadata> {
+  const { locale } = await params;
 
-  if (!checkSupportedLocales(locale)) {
+  if (!checkSupportedLocales(locale as Language)) {
     return { title: 'Nail Studio', description: '' };
   }
 
@@ -56,10 +52,15 @@ export function generateStaticParams() {
   return i18nConfig.locales.map((locale) => ({ locale }));
 }
 
-export default async function RootLayout({children, params}: LocaleLayoutProps
-) {
-
-  const { locale } =  params;
+export default async function RootLayout({
+  children,
+  params,
+}: {
+  params: Params;
+  children: React.ReactNode;
+}) {
+  const { locale } = await params;
+  console.log(params);
 
   const { resources } = await initTranslations(locale, i18nNamespaces);
 
@@ -74,7 +75,6 @@ export default async function RootLayout({children, params}: LocaleLayoutProps
           className={`${nunitoSans.variable} ${playfairDisplay.variable} antialiased`}
         >
           <DiscountBanner />
-
           <Header locale={locale} />
           {children}
         </body>

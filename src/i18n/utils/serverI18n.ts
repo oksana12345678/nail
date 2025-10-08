@@ -1,9 +1,8 @@
 import { createInstance } from 'i18next';
 import Backend from 'i18next-fs-backend';
 import i18nConfig from '../../../i18nConfig.js';
-import { Language } from '@/shared/types/index.js';
 
-export async function initServerI18n(locale: Language, namespaces = ['common']) {
+export async function initServerI18n(locale: string, namespaces = ['common']) {
   const i18nInstance = createInstance();
 
   await i18nInstance.use(Backend).init({

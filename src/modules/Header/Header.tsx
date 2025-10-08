@@ -32,7 +32,7 @@ const Header: React.FC<LocaleParams> = ({ locale }) => {
         >
           {t && t('book_now')}
         </Link>{' '}
-        <MbMenu navItems={navItems} t={t} />
+        <MbMenu navItems={navItems} t={t} locale={locale} />
       </nav>
     </header>
   );

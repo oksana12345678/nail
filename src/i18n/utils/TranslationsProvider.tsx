@@ -4,11 +4,10 @@ import { ReactNode } from 'react';
 import { createInstance, i18n, Resource } from 'i18next';
 import { I18nextProvider } from 'react-i18next';
 import initTranslations from './i18n';
-import { Language } from '@/shared/types';
 
 interface TranslationsProviderProps {
   children: ReactNode;
-  locale: Language;
+  locale: string;
   namespaces: string[];
   resources?: Resource;
 }

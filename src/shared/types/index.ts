@@ -1,8 +1,9 @@
 import { TFunction } from 'i18next';
 import { LANGUAGES } from '../constants';
 
-
 export type Language = (typeof LANGUAGES)[keyof typeof LANGUAGES];
+
+type AwaitedParams<T> = T extends Promise<infer U> ? U : T;
 
 export type Translation = { t: TFunction };
 export interface ChildrenProps {
@@ -10,7 +11,7 @@ export interface ChildrenProps {
 }
 export interface LayoutProps {
   children?: React.ReactNode;
-  params: { locale: Language };
+  params: AwaitedParams<{ locale: string } | Promise<{ locale: string }>>;
 }
 
 export interface StateProps {
@@ -22,5 +23,5 @@ export interface StateProps {
 }
 
 export interface LocaleParams {
-  locale: React.ReactNode ;
+  locale: string;
 }

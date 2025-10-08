@@ -14,7 +14,6 @@ const NailServices: React.FC<Translation> = ({ t }) => {
     name: string;
     coast: string;
   }[];
-
   return (
     <Swiper
       modules={[Pagination, Autoplay, EffectCube]}

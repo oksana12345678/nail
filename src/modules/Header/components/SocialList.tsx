@@ -14,7 +14,6 @@ const SocialList: React.FC<StateProps & Translation> = ({
     url: string;
     icon: string;
   }[];
-
   return (
     <ul className={clsx('lg:flex  gap-4', className)}>
       {socials?.map((social) => (

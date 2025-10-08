@@ -1,5 +1,3 @@
-import Button from '@/shared/components/Button/Button';
-import { Language, Translation } from '@/shared/types';
 import Image, { StaticImageData } from 'next/image';
 import Link from 'next/link';
 import React from 'react';
@@ -12,7 +10,7 @@ interface TrendsCardProps {
     link: string;
   };
   image: StaticImageData;
-  locale: Language;
+  locale: string;
 }
 
 const TrendsCard: React.FC<TrendsCardProps> = ({ trend, image, locale }) => {

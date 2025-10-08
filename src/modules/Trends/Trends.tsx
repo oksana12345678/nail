@@ -11,6 +11,8 @@ import { LocaleParams } from '@/shared/types';
 const Trends: React.FC<LocaleParams> = ({ locale }) => {
   const { t } = useTranslation('trends');
 
+  console.log(locale);
+
   return (
     <Section>
       <Container

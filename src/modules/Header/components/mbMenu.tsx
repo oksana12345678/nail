@@ -1,13 +1,17 @@
 'use client';
 
-import { StateProps, Translation } from '@/shared/types';
+import { LocaleParams, StateProps, Translation } from '@/shared/types';
 import React, { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import MbButton from './MbButton';
 import NavList from './NavList';
 import SocialList from './SocialList';
 
-const MbMenu: React.FC<StateProps & Translation> = ({ navItems, t }) => {
+const MbMenu: React.FC<StateProps & Translation & LocaleParams> = ({
+  navItems,
+  t,
+  locale,
+}) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const handleToggleMenu = () => {
@@ -29,6 +33,7 @@ const MbMenu: React.FC<StateProps & Translation> = ({ navItems, t }) => {
         <div className="absolute z-50 w-full h-screen  top-20 right-0 bg-main_bg/90 backdrop-blur-md p-4 rounded-lg flex flex-col pt-16 justify-start items-center gap-10  lg:hidden">
           <NavList
             t={t}
+            locale={locale}
             navItems={navItems}
             className="flex flex-col text-2xl"
           />

@@ -1,4 +1,4 @@
-import Gallery from '@/pages/Gallery/Gallery';
+import Gallery from '@/page/Gallery/Gallery';
 import React from 'react';
 
 const GalleryPage = () => {
