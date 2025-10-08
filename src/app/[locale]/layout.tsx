@@ -8,7 +8,7 @@ import { checkSupportedLocales } from '@/shared/utils/checkSupportedLocales';
 import Header from '@/modules/Header/Header';
 import initTranslations from '@/i18n/utils/i18n';
 import DiscountBanner from '@/modules/DiscountBanner/DiscountBanner';
-import { Language, LayoutProps } from '@/shared/types/index';
+import { Language } from '@/shared/types/index';
 import { TranslationsProvider } from '@/i18n/utils';
 
 const nunitoSans = Nunito({

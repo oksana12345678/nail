@@ -9,10 +9,6 @@ export type Translation = { t: TFunction };
 export interface ChildrenProps {
   children?: React.ReactNode;
 }
-export interface LayoutProps {
-  children?: React.ReactNode;
-  params: AwaitedParams<{ locale: string } | Promise<{ locale: string }>>;
-}
 
 export interface StateProps {
   navItems?: readonly string[];
