@@ -21,5 +21,5 @@ export interface StateProps {
 }
 
 export interface LocaleParams {
-  locale: Language;
+  locale: string ;
 }
