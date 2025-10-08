@@ -1,15 +1,9 @@
-import AboutUs from '@/modules/AboutUs/AboutUs';
-import Hero from '@/modules/Hero/Hero';
-import HotDates from '@/modules/HotDates/HotDates';
-import OurProducts from '@/modules/OurProducts/OurProducts';
+import Home from '@/pages/Home/Home';
 
-export default function Home() {
+export default function MainPage({ params }: { params: { locale: string } }) {
   return (
     <main className="font-sans  flex flex-col justify-center items-center">
-      <Hero />
-      <HotDates />
-      <AboutUs />
-      <OurProducts />
+      <Home locale={params.locale} />
     </main>
   );
 }

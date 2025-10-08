@@ -9,4 +9,6 @@ export const NAMESPACES = [
   'about',
   'portfolio',
   'contact',
+  'buttons',
+  'trends',
 ] as const;

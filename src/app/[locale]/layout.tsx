@@ -53,7 +53,7 @@ export default async function RootLayout(props: LayoutProps) {
   const { children, params } = props;
   const { locale } = params;
 
-  const { t, resources } = await initTranslations(locale, i18nNamespaces);
+  const { resources } = await initTranslations(locale, i18nNamespaces);
 
   return (
     <html lang={locale}>
@@ -67,7 +67,7 @@ export default async function RootLayout(props: LayoutProps) {
         >
           <DiscountBanner />
 
-          <Header t={t} />
+          <Header locale={locale} />
           {children}
         </body>
       </TranslationsProvider>

@@ -6,5 +6,15 @@
     "portfolio": { "title": "Portfolio", "link": "#portfolio" },
     "contact_us": { "title": "Contact us", "link": "#contact" }
   },
-  "book_now": "Book now"
+  "book_now": "Book now",
+  "social": [
+    {
+      "url": "https://www.facebook.com",
+      "icon": "facebook"
+    },
+    {
+      "url": "https://www.instagram.com",
+      "icon": "instagram"
+    }
+  ]
 }

@@ -1,5 +1,19 @@
 {
-  "title": "Welcome to our site",
-  "subtitle": "We create awesome projects",
-  "cta": "Get Started"
+  "main_text": "Zrób olśniewające paznokcie!",
+  "button": "O nas",
+
+  "services_list": [
+    {
+      "name": "Manicure",
+      "coast": "Lakier hybrydowy i nail art, aby Twoje paznokcie wyglądały zjawiskowo."
+    },
+    {
+      "name": "Pedicure",
+      "coast": "Wygodne fotele do masażu, bezpłatne Wi-Fi i różne napoje, aby Twój pobyt był jak najbardziej przyjemny."
+    },
+    {
+      "name": "Nail Art",
+      "coast": "Doświadczeni styliści paznokci, którzy kochają swoją pracę i zapewniają najlepszą możliwą obsługę."
+    }
+  ]
 }

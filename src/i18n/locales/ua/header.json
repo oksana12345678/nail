@@ -6,5 +6,15 @@
     "portfolio": { "title": "Портфоліо", "link": "#portfolio" },
     "contact_us": { "title": "Зв'яжіться з нами", "link": "#contact" }
   },
-  "book_now": "Забронювати"
+  "book_now": "Забронювати",
+  "social": [
+    {
+      "url": "https://www.facebook.com",
+      "icon": "facebook"
+    },
+    {
+      "url": "https://www.instagram.com",
+      "icon": "instagram"
+    }
+  ]
 }

@@ -1,29 +1,25 @@
 {
+  "title": "Our Nail Products",
   "products": {
     "0": {
-      "photo": "/about_second.png",
-      "title": "Foot Care",
-      "link": "/products/foot-care"
+      "title": "Get your nails done",
+      "link": "/products/booksy"
     },
     "1": {
-      "photo": "/about_second.png",
-      "title": "Hand Care",
+      "title": "Hand care",
       "link": "/products/hand-care"
     },
     "2": {
-      "photo": "/about_second.png",
-      "title": "Nail Polish",
+      "title": "Nail polish",
       "link": "/products/nail-polish"
     },
     "3": {
-      "photo": "/about_second.png",
-      "title": "Nail Art",
-      "link": "/products/nail-art"
+      "title": "Nail care Tools",
+      "link": "/products/tools"
     },
     "4": {
-      "photo": "/about_second.png",
-      "title": "Nail Treatment",
-      "link": "/products/nail-treatment"
+      "title": "Other products",
+      "link": "/products/others"
     }
   }
 }

@@ -1,29 +1,26 @@
 {
+  "title": "Наші продукти для нігтів",
+
   "products": {
     "0": {
-      "photo": "/public/nail_about.png",
-      "title": "Догляд за стопами",
-      "link": "/products/foot-care"
+      "title": "Зроби собі манікюр",
+      "link": "/products/booksy"
     },
     "1": {
-      "photo": "/public/hand_care.png",
       "title": "Догляд за руками",
       "link": "/products/hand-care"
     },
     "2": {
-      "photo": "/public/nail_polish.png",
       "title": "Лак для нігтів",
       "link": "/products/nail-polish"
     },
     "3": {
-      "photo": "/public/nail_art.png",
-      "title": "Нейл-арт",
-      "link": "/products/nail-art"
+      "title": "Інструменти",
+      "link": "/products/tools"
     },
     "4": {
-      "photo": "/public/nail_treatment.png",
-      "title": "Лікування нігтів",
-      "link": "/products/nail-treatment"
+      "title": "Інші продукти",
+      "link": "/products/others"
     }
   }
 }

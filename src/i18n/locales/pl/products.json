@@ -1,29 +1,26 @@
 {
+  "title": "Nasze produkty do paznokci",
+
   "products": {
     "0": {
-      "photo": "/public/nail_about.png",
-      "title": "Pielęgnacja stóp",
-      "link": "/products/foot-care"
+      "title": "Zrób sobie paznokcie",
+      "link": "/products/booksy"
     },
     "1": {
-      "photo": "/public/hand_care.png",
       "title": "Pielęgnacja dłoni",
       "link": "/products/hand-care"
     },
     "2": {
-      "photo": "/public/nail_polish.png",
       "title": "Lakier do paznokci",
       "link": "/products/nail-polish"
     },
     "3": {
-      "photo": "/public/nail_art.png",
-      "title": "Sztuka paznokci",
-      "link": "/products/nail-art"
+      "title": "Narzendzia",
+      "link": "/products/tools"
     },
     "4": {
-      "photo": "/public/nail_treatment.png",
-      "title": "Kuracja paznokci",
-      "link": "/products/nail-treatment"
+      "title": "Pozostale produkty",
+      "link": "/products/others"
     }
   }
 }

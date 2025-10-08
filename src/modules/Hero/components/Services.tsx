@@ -5,10 +5,16 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/effect-cube';
-import data from '../data.json';
 import { Pagination, Autoplay, EffectCube } from 'swiper/modules';
+import { useTranslation } from 'react-i18next';
+import { Translation } from '@/shared/types';
 
-const NailServices = () => {
+const NailServices: React.FC<Translation> = ({ t }) => {
+  const services = t('services_list', { returnObjects: true }) as {
+    name: string;
+    coast: string;
+  }[];
+
   return (
     <Swiper
       modules={[Pagination, Autoplay, EffectCube]}
@@ -27,7 +33,7 @@ const NailServices = () => {
         shadowScale: 0.94,
       }}
     >
-      {data.services_list.map((service, index) => (
+      {services.map((service, index) => (
         <SwiperSlide key={index}>
           <p className="text-lg font-semibold text-center text-white px-2 pt-6 h-full flex flex-col">
             {service.name.toUpperCase()}

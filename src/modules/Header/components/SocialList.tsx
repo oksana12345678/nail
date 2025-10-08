@@ -1,15 +1,20 @@
 import Icon from '@/shared/components/Icon/Icon';
-import { StateProps } from '@/shared/types';
+import { StateProps, Translation } from '@/shared/types';
 import clsx from 'clsx';
 import Link from 'next/link';
 import React from 'react';
 
-const SocialList: React.FC<StateProps> = ({
-  socials,
+const SocialList: React.FC<StateProps & Translation> = ({
+  t,
   className,
   classIcon,
   classListsName,
 }) => {
+  const socials = t('social', { returnObjects: true }) as {
+    url: string;
+    icon: string;
+  }[];
+
   return (
     <ul className={clsx('lg:flex  gap-4', className)}>
       {socials?.map((social) => (

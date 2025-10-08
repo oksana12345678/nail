@@ -1,0 +1,18 @@
+{
+  "title": "news and sophisticated trends",
+  "trends_list": [
+    {
+      "name": "Fall designs",
+      "desc": "Check out the latest fall nail art trends with vibrant colors and leaf patterns to brighten up your look.",
+      "button": "get inspired",
+      "link": "/gallery"
+    },
+
+    {
+      "name": "Minimalist nails",
+      "desc": "Discover the elegance of minimalist nail designs that focus on simplicity and sophistication for a chic look.",
+      "button": "get inspired",
+      "link": "/gallery"
+    }
+  ]
+}

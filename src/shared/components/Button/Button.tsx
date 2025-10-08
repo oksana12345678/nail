@@ -13,7 +13,7 @@ const Button = ({
   children,
   type = 'button',
   variant = 'primary',
-  size = 'small',
+  size = 'medium',
   border = false,
   fontSize,
   className,
@@ -23,12 +23,13 @@ const Button = ({
   const variantClasses = {
     primary: 'bg-[#1D1D1E] text-white hover-main rounded-lg',
     secondary: 'bg-gray-200 text-gray-800 hover:bg-gray-300',
-    outline: 'border border-gray-400 text-gray-800 hover:bg-gray-100',
+    outline:
+      'border rounded-2xl border-white text-white hover:bg-gray-100 hover:text-black',
   };
 
   const sizeClasses = {
-    small: 'px-7 py-3.5',
-    medium: 'px-4 py-2',
+    small: 'px-6 py-2',
+    medium: 'px-7 py-3.5',
     large: 'px-6 py-3',
   };
 

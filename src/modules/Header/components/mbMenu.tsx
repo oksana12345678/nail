@@ -1,18 +1,14 @@
 'use client';
 
-import Icon from '@/shared/components/Icon/Icon';
-import { StateProps } from '@/shared/types';
-import Link from 'next/link';
+import { StateProps, Translation } from '@/shared/types';
 import React, { useEffect, useState } from 'react';
-import NavButtons from './NavButtons';
 import { useTranslation } from 'react-i18next';
 import MbButton from './MbButton';
 import NavList from './NavList';
 import SocialList from './SocialList';
 
-const MbMenu: React.FC<StateProps> = ({ navItems, socials }) => {
+const MbMenu: React.FC<StateProps & Translation> = ({ navItems, t }) => {
   const [isOpen, setIsOpen] = useState(false);
-  const { t } = useTranslation('header');
 
   const handleToggleMenu = () => {
     setIsOpen(!isOpen);
@@ -26,7 +22,7 @@ const MbMenu: React.FC<StateProps> = ({ navItems, socials }) => {
   }, [isOpen]);
 
   return (
-    <div>
+    <div className="lg:hidden">
       <MbButton open={handleToggleMenu} isOpen={isOpen} />
 
       {isOpen && (
@@ -38,7 +34,7 @@ const MbMenu: React.FC<StateProps> = ({ navItems, socials }) => {
           />
 
           <SocialList
-            socials={socials}
+            t={t}
             classIcon="w-10 h-10  "
             className="flex "
             classListsName="border bg-skin_accent border-white rounded-full w-14 h-14 "

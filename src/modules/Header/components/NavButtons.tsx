@@ -1,4 +1,4 @@
-import { Translation } from '@/shared/types';
+import { LocaleParams, Translation } from '@/shared/types';
 import clsx from 'clsx';
 import Link from 'next/link';
 import React from 'react';
@@ -8,12 +8,20 @@ interface NavButtonsProps extends Translation {
   className?: string;
 }
 
-const NavButtons: React.FC<NavButtonsProps> = ({ t, itemKey, className }) => {
+const NavButtons: React.FC<NavButtonsProps & LocaleParams> = ({
+  t,
+  itemKey,
+  className,
+  locale,
+}) => {
   const title = t ? t(`nav.${itemKey}.title`) : '';
   const link = t ? t(`nav.${itemKey}.link`) : '#';
 
   return (
-    <Link href={`${link}`} className={clsx('text-main_button', className)}>
+    <Link
+      href={`${locale}${link}`}
+      className={clsx('text-main_button', className)}
+    >
       {title}
     </Link>
   );

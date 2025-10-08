@@ -3,7 +3,7 @@ import { LANGUAGES } from '../constants';
 
 export type Language = (typeof LANGUAGES)[keyof typeof LANGUAGES];
 
-export type Translation = { t?: TFunction };
+export type Translation = { t: TFunction };
 export interface ChildrenProps {
   children?: React.ReactNode;
 }
@@ -12,10 +12,14 @@ export interface LayoutProps {
   params: { locale: Language };
 }
 
-export interface StateProps extends Translation {
+export interface StateProps {
   navItems?: readonly string[];
   socials?: { icon: string; url: string }[];
   className?: string;
   classIcon?: string;
   classListsName?: string;
+}
+
+export interface LocaleParams {
+  locale: string;
 }

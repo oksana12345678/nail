@@ -1,0 +1,17 @@
+{
+  "title": "nowości i wyrafinowane trendy",
+  "trends_list": [
+    {
+      "name": "Jesienne wzory",
+      "desc": "Zobacz najnowsze jesienne trendy w stylizacji paznokci z żywymi kolorami i wzorami liści, które ożywią Twój wygląd.",
+      "button": "zainspiruj się",
+      "link": "/gallery"
+    },
+    {
+      "name": "Minimalistyczne paznokcie",
+      "desc": "Odkryj elegancję minimalistycznych wzorów paznokci, które łączą prostotę i wyrafinowanie dla szykownego wyglądu.",
+      "button": "zainspiruj się",
+      "link": "/gallery"
+    }
+  ]
+}
