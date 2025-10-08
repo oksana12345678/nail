@@ -32,9 +32,7 @@ const mainMetadataDict: Record<Language, { description: string }> = {
 
 export async function generateMetadata({
   params,
-}: {
-  
-  params: { locale: Language };}
+}
 ): Promise<Metadata> {
   const { locale } = params;
 
@@ -54,7 +52,7 @@ export function generateStaticParams() {
 
 export default async function RootLayout({children, params}: {
   children: React.ReactNode;
-  params: { locale: Language };
+  
 }) {
 
   const { locale } =  params;
