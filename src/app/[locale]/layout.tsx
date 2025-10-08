@@ -30,9 +30,15 @@ const mainMetadataDict: Record<Language, { description: string }> = {
   pl: { description: '' },
 };
 
+
+interface LocaleLayoutProps {
+  children?: React.ReactNode;
+  params: { locale: string }; // не Language!
+};
+
 export async function generateMetadata({
   params,
-}:{params:{locale:Language };}
+}:LocaleLayoutProps
 ): Promise<Metadata> {
   const { locale } = params;
 
@@ -50,10 +56,8 @@ export function generateStaticParams() {
   return i18nConfig.locales.map((locale) => ({ locale }));
 }
 
-export default async function RootLayout({children, params}: {
-  children: React.ReactNode;
-  params:{locale:Language};
-}) {
+export default async function RootLayout({children, params}: LocaleLayoutProps
+) {
 
   const { locale } =  params;
 
