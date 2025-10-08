@@ -1,9 +1,14 @@
 import Home from '@/pages/Home/Home';
 
-export default function MainPage({ params }: { params: { locale: string } }) {
+export default async function MainPage({
+  params,
+}: {
+  params: { locale: string };
+}) {
+  const {locale} = await params;
   return (
     <main className="font-sans  flex flex-col justify-center items-center">
-      <Home locale={params.locale} />
+      <Home locale={locale} />
     </main>
   );
 }

@@ -9,7 +9,7 @@ export interface ChildrenProps {
 }
 export interface LayoutProps {
   children?: React.ReactNode;
-  params: { locale: string };
+  params: { locale: Language };
 }
 
 export interface StateProps {
