@@ -32,7 +32,7 @@ const mainMetadataDict: Record<Language, { description: string }> = {
 
 export async function generateMetadata({
   params,
-}:{params:{locale:string };}
+}:{params:{locale:Language };}
 ): Promise<Metadata> {
   const { locale } = params;
 
