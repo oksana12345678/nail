@@ -33,7 +33,7 @@ const mainMetadataDict: Record<Language, { description: string }> = {
 export async function generateMetadata({
   params,
 }: LayoutProps): Promise<Metadata> {
-  const { locale } = await params;
+  const { locale } = params;
 
   if (!checkSupportedLocales(locale)) {
     return { title: 'Nail Studio', description: '' };
@@ -51,7 +51,7 @@ export function generateStaticParams() {
 
 export default async function RootLayout({children, params}: LayoutProps) {
 
-  const { locale } = await params;
+  const { locale } =  params;
 
   const { resources } = await initTranslations(locale, i18nNamespaces);
 
