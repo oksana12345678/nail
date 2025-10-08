@@ -60,7 +60,6 @@ export default async function RootLayout({
   children: React.ReactNode;
 }) {
   const { locale } = await params;
-  console.log(params);
 
   const { resources } = await initTranslations(locale, i18nNamespaces);
 
