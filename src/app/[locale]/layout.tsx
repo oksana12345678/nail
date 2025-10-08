@@ -33,7 +33,7 @@ const mainMetadataDict: Record<Language, { description: string }> = {
 
 interface LocaleLayoutProps {
   children?: React.ReactNode;
-  params: { locale()=>void;  }; //не Language!
+  params: { locale:()=>void;  }; //не Language!
 };
 
 export async function generateMetadata({
