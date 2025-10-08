@@ -1,10 +1,10 @@
-import { Translation } from '@/shared/types';
+import { Language, Translation } from '@/shared/types';
 import React from 'react';
 import TrendsCard from '../TrendsCard/TrendsCard';
 import { trendsAll } from '../../../../../public/trends';
 
 interface TrendsListProps extends Translation {
-  locale: string;
+  locale: Language;
 }
 
 const TrendsList: React.FC<TrendsListProps> = ({ t, locale }) => {
