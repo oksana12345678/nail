@@ -7,7 +7,7 @@ const Gallery: React.FC = () => {
   return (
     <Section>
       <Container>
-        <GalleryList className="gap-8" listItemClass="w-[280px] h-[320px]" />
+        <GalleryList />
       </Container>
     </Section>
   );

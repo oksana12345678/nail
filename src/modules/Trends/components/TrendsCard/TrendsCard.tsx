@@ -15,7 +15,7 @@ interface TrendsCardProps {
 
 const TrendsCard: React.FC<TrendsCardProps> = ({ trend, image, locale }) => {
   return (
-    <div className="flex flex-col gap-4  w-min">
+    <div className="flex flex-col gap-4  sm:w-min">
       <div className="w-full sm:w-[280px] h-[320px] sm:h-[420px] lg:w-[480px] lg:h-[580px] relative">
         <Image src={image} fill alt="nail images" />
       </div>
@@ -23,7 +23,10 @@ const TrendsCard: React.FC<TrendsCardProps> = ({ trend, image, locale }) => {
         <h3 className="font-semibold text-xl mb-2 w-full">{trend.name}</h3>
         <p className="text-base text-secondary_white_text">{trend.desc}</p>
       </div>
-      <Link href={`${locale}/${trend.link}`} className="uppercase ">
+      <Link
+        href={`${locale}/${trend.link}`}
+        className="uppercase hover:text-skin_accent   text-secondary_accent font-medium text-xl transition-custom"
+      >
         {trend.button} →
       </Link>
     </div>

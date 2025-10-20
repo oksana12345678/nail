@@ -1,15 +1,23 @@
 import React from 'react';
 import { trendsAll } from '../../../public/trends';
 import Image from 'next/image';
+import clsx from 'clsx';
 
-const GalleryList: React.FC = () => {
-  console.log(trendsAll);
+interface GalleryListProps {
+  className?: string;
+  listItemClass?: string;
+}
+
+const GalleryList: React.FC<GalleryListProps> = ({
+  className,
+  listItemClass,
+}) => {
   return (
     <>
-      <ul className="flex flex-wrap gap-8">
+      <ul className={clsx('flex flex-wrap ', className)}>
         {trendsAll.map((trend, ind) => (
-          <li key={ind} className="w-[280px] h-[320px] relative">
-            <Image src={trend} fill alt="" />
+          <li key={ind} className={clsx(' relative', listItemClass)}>
+            <Image src={trend} fill alt="" className="w-full" />
           </li>
         ))}
       </ul>

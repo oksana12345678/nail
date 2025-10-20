@@ -5,7 +5,8 @@ import React, { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import MbButton from './MbButton';
 import NavList from './NavList';
-import SocialList from './SocialList';
+import SocialList from '../../../shared/components/SocialsList/SocialList';
+import LanguageSwitcher from '@/shared/components/LanguageSwitcher/LanguageSwitcher';
 
 const MbMenu: React.FC<StateProps & Translation & LocaleParams> = ({
   navItems,
@@ -31,6 +32,8 @@ const MbMenu: React.FC<StateProps & Translation & LocaleParams> = ({
 
       {isOpen && (
         <div className="absolute z-50 w-full h-screen  top-20 right-0 bg-main_bg/90 backdrop-blur-md p-4 rounded-lg flex flex-col pt-16 justify-start items-center gap-10  lg:hidden">
+          <LanguageSwitcher />
+
           <NavList
             t={t}
             locale={locale}

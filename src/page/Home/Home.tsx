@@ -1,4 +1,5 @@
 import AboutUs from '@/modules/AboutUs/AboutUs';
+import FollowUs from '@/modules/FollowUs/FollowUs';
 import Hero from '@/modules/Hero/Hero';
 import HotDates from '@/modules/HotDates/HotDates';
 import OurProducts from '@/modules/OurProducts/OurProducts';
@@ -14,6 +15,7 @@ const Home: React.FC<LocaleParams> = (locale) => {
       <AboutUs />
       <OurProducts />
       <Trends locale={locale.locale} />
+      <FollowUs />
     </>
   );
 };

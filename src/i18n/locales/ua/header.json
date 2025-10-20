@@ -1,6 +1,6 @@
 {
   "nav": {
-    "home": { "title": "Головна", "link": "/home" },
+    "home": { "title": "Головна", "link": "/" },
     "about": { "title": "Про нас", "link": "#about" },
     "pages": { "title": "Сторінки", "link": "/pages" },
     "portfolio": { "title": "Портфоліо", "link": "#portfolio" },

@@ -1,14 +1,14 @@
 'use client';
 
 import React from 'react';
-import { LocaleParams, Translation } from '@/shared/types';
-import socials from './data.json';
+import { LocaleParams } from '@/shared/types';
 import Link from 'next/link';
 import Icon from '@/shared/components/Icon/Icon';
 import MbMenu from './components/mbMenu';
 import NavList from './components/NavList';
-import SocialList from './components/SocialList';
+import SocialList from '../../shared/components/SocialsList/SocialList';
 import { useTranslation } from 'react-i18next';
+import LanguageSwitcher from '@/shared/components/LanguageSwitcher/LanguageSwitcher';
 
 const navItems = ['home', 'about', 'pages', 'portfolio', 'contact_us'] as const;
 
@@ -26,6 +26,9 @@ const Header: React.FC<LocaleParams> = ({ locale }) => {
         </Link>
         <NavList t={t} navItems={navItems} className="hidden" locale={locale} />
         <SocialList t={t} className="hidden " classIcon="w-7 h-7" />
+        <div className="hidden sm:flex">
+          <LanguageSwitcher />
+        </div>
         <Link
           href="#"
           className="base-button_mb base-font-normal sm:base-button uppercase transition-custom animate-pulse bg-main_bg/30"

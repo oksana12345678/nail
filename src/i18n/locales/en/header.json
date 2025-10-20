@@ -1,6 +1,6 @@
 {
   "nav": {
-    "home": { "title": "Home", "link": "/home" },
+    "home": { "title": "Home", "link": "/" },
     "about": { "title": "About us", "link": "#about" },
     "pages": { "title": "Pages", "link": "/pages" },
     "portfolio": { "title": "Portfolio", "link": "#portfolio" },

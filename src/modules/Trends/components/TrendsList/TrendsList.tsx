@@ -16,7 +16,7 @@ const TrendsList: React.FC<TrendsListProps> = ({ t, locale }) => {
   }[];
 
   return (
-    <ul className="flex w-full gap-10 items-center justify-center">
+    <ul className="flex w-full flex-col sm:flex-row gap-10 items-center justify-center">
       {trendsListRaw.map((trend, ind) => (
         <li key={ind}>
           <TrendsCard

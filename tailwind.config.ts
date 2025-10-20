@@ -70,7 +70,7 @@ const tailwindConfig = {
 
           '.transition-custom': {
             transitionProperty:
-              'background-color, border-color, color, fill, stroke, box-shadow, transform, border-radius, text-shadow',
+              'background-color, border-color, color, fill, stroke, box-shadow, transform, border-radius, text-shadow, opacity',
             transitionDelay: '100ms',
             transitionDuration: '500ms',
             transitionTimingFunction: 'ease-in-out',

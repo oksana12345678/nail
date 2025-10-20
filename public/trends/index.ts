@@ -6,6 +6,10 @@ import nailSeven from './seven.jpeg';
 import nailEight from './eight.jpeg';
 import nailNine from './nine.jpg';
 import nailTen from './ten.jpeg';
+import classNail from './class_nail.png';
+// import nudNail from './nud_nail.png';
+// import pinkNudNail from './pink_nud_nail.png';
+import polishGal from './polish_gal.png';
 
 export const trendsAll = [
   nailThree,
@@ -16,4 +20,8 @@ export const trendsAll = [
   nailSeven,
   nailEight,
   nailNine,
+  // classNail,
+  // nudNail,
+  // pinkNudNail,
+  // polishGal,
 ];
