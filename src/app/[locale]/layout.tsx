@@ -10,6 +10,7 @@ import initTranslations from '@/i18n/utils/i18n';
 import DiscountBanner from '@/modules/DiscountBanner/DiscountBanner';
 import { Language } from '@/shared/types/index';
 import { TranslationsProvider } from '@/i18n/utils';
+import Footer from '@/modules/Footer/Footer';
 
 const nunitoSans = Nunito({
   variable: '--font-nunito-sans',
@@ -76,6 +77,7 @@ export default async function RootLayout({
           <DiscountBanner />
           <Header locale={locale} />
           {children}
+          <Footer locale={locale} />
         </body>
       </TranslationsProvider>
     </html>

@@ -12,3 +12,11 @@ export const NAMESPACES = [
   'buttons',
   'trends',
 ] as const;
+
+export const NAV_ITEMS = [
+  'home',
+  'about',
+  'pages',
+  'portfolio',
+  'contact_us',
+] as const;

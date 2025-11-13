@@ -16,8 +16,9 @@ export interface StateProps {
   className?: string;
   classIcon?: string;
   classListsName?: string;
+  title?: string;
 }
 
 export interface LocaleParams {
-  locale: string;
+  locale?: string;
 }

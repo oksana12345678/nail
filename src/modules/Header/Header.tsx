@@ -9,23 +9,26 @@ import NavList from './components/NavList';
 import SocialList from '../../shared/components/SocialsList/SocialList';
 import { useTranslation } from 'react-i18next';
 import LanguageSwitcher from '@/shared/components/LanguageSwitcher/LanguageSwitcher';
-
-const navItems = ['home', 'about', 'pages', 'portfolio', 'contact_us'] as const;
+import Logo from '@/shared/components/Logo/Logo';
+import { NAV_ITEMS } from '@/shared/constants';
 
 const Header: React.FC<LocaleParams> = ({ locale }) => {
   const { t } = useTranslation('header');
   return (
     <header className="absolute w-screen top-12 lg:left-1/2 lg:-translate-x-1/2 z-50 ">
       <nav className="w-screen md:max-w-[768px] lg:max-w-[1280px]  mx-auto flex items-center justify-between py-2 md:px-6 px-4 backdrop-blur-md ">
-        <Link href="#" className="flex flex-col items-center  ">
-          <Icon
-            iconName="logo"
-            className="w-12 h-12 fill-[#F6E6D6]  stroke-[#1D1D1E]"
-          />
-          <span>Nail Studio</span>
-        </Link>
-        <NavList t={t} navItems={navItems} className="hidden" locale={locale} />
-        <SocialList t={t} className="hidden " classIcon="w-7 h-7" />
+        <Logo />
+        <NavList
+          t={t}
+          navItems={NAV_ITEMS}
+          className="hidden text-main_button gap-4"
+          locale={locale}
+        />
+        <SocialList
+          t={t}
+          className="hidden black "
+          classIcon="w-7 h-7 fill-secondary_accent  stroke-secondary_accent"
+        />
         <div className="hidden sm:flex">
           <LanguageSwitcher />
         </div>
@@ -35,7 +38,7 @@ const Header: React.FC<LocaleParams> = ({ locale }) => {
         >
           {t && t('book_now')}
         </Link>{' '}
-        <MbMenu navItems={navItems} t={t} locale={locale} />
+        <MbMenu navItems={NAV_ITEMS} t={t} locale={locale} />
       </nav>
     </header>
   );

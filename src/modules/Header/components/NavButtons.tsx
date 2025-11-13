@@ -18,10 +18,7 @@ const NavButtons: React.FC<NavButtonsProps & LocaleParams> = ({
   const link = t ? t(`nav.${itemKey}.link`) : '#';
 
   return (
-    <Link
-      href={`${locale}${link}`}
-      className={clsx('text-main_button', className)}
-    >
+    <Link href={`${locale}${link}`} className={clsx('text-inherit', className)}>
       {title}
     </Link>
   );

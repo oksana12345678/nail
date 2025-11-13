@@ -7,6 +7,8 @@
     "contact_us": { "title": "Зв'яжіться з нами", "link": "#contact" }
   },
   "book_now": "Забронювати",
+  "socials_title": "соцмережі",
+
   "social": [
     {
       "url": "https://www.facebook.com",

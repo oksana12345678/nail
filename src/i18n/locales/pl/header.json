@@ -7,6 +7,8 @@
     "contact_us": { "title": "Kontakt", "link": "#contact" }
   },
   "book_now": "Zarezerwuj",
+  "socials_title": "socials",
+
   "social": [
     {
       "url": "https://www.facebook.com",
